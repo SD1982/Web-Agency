@@ -1,0 +1,290 @@
+<!doctype html>
+
+<html lang="fr">
+
+<head>
+    <title>WebAgency</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="WebAgency l'agence de tout vos projets" />
+    <!-- Twitter Card data -->
+    <meta name="twitter:card" content="WebAgency l'agence de tout vos projets">
+    <!-- Open Graph data -->
+    <meta property="og:title" content="Webagency" />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="www.projet1.wedostedec.com" />
+    <meta property="og:image" content="www.projet1.wedostedec.com/images/slider/bg1.jpg" />
+    <meta property="og:description" content="WebAgency l'agence de tout vos projets" />
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/responsive.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.10/css/all.css" integrity="sha384-+d0P83n9kaQMCwj8F4RJB66tzIwOKmrdb46+porD/OvrJ+37WqIM7UoBtwHO6Nlg" crossorigin="anonymous">
+    <link rel="icon" type="image/png" href="images/favicon/favicon-16x16.png" />
+</head>
+
+<body>
+    <!-- header de la page en position fixe contenantt le logo , le menu , le menu burger-->
+    <header>
+        <!--le logo -->
+        <img id="logo" src="images/logo.png" alt="logo WEBAGENCY" />
+        <!--le menu classique de navigation fonctionne avec des ancres -->
+        <nav>
+            <ul id="menu">
+                <li><a href="#accueil">Accueil</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#portefolio">Portfolio</a></li>
+                <li><a href="#contacts">Contacts</a></li>
+            </ul>
+        </nav>
+        <!--le menu hamburger du site visible uniquement en version mobile fonctionne de la meme facon que le menu classique -->
+        <div id="menuBurger">
+            <div id="p1">
+                <div id="p2">
+                    <img id="logoMobile" src="images/logo.png" alt="logo WEBAGENCY" />
+                    <i id="burger" class="fas fa-bars"></i>
+                    <input id="check" type="checkbox" />
+                    <nav>
+                        <ul>
+                            <li><a href="#accueil">Accueil</a></li>
+                            <li><a href="#services">Services</a></li>
+                            <li><a href="#portefolio">Portfolio</a></li>
+                            <li><a href="#contacts">Contacts</a></li>
+                        </ul>
+                    </nav>
+                </div>
+            </div>
+        </div>
+    </header>
+    <!-- section accueil du site contenant le slider et le slogan de l'agence -->
+    <section id="accueil">
+        <!--le slider -->
+        <div id="slider">
+            <!--les boutons du slider visible uniquement en hover -->
+            <div class="boutons">
+                <div id="droite"><a href="#"><i class="fas fa-chevron-right fa-lg"></i></a></div>
+                <div id="gauche"><a href="#"><i class="fas fa-chevron-left fa-lg"></i></a></div>
+            </div>
+            <!--le slogan de l'agence avec un bouton menant au formulaire de contact-->
+            <div id="texte">
+                <h1><strong>WEBAGENCY </strong> : L'AGENCE DE TOUT<br/>VOS PROJETS</h1>
+                <p>Vous avez un projet ? WebAgency vous aide a le réaliser !
+                    <p><br/>
+                        <a id="boutonInfos" href="#formulaire">Plus d'infos</a>
+            </div>
+            <!--la partie mobile du slider contenant deux images -->
+            <div class="slides">
+                <div id="slide1">
+                    <img src="images/slider/bg1.jpg" alt="petite fille avec de la peinture sur les mains">
+                </div>
+                <div id="slide2">
+                    <img src="images/slider/bg2.jpg" alt="petit garcon avec un mégaphone">
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--la partie services du site propose un descriptif des compétences de la Webagency -->
+    <section id="services">
+        <article>
+            <!--la partie titre comprend le titre ansi qu'un descriptif général de l'agence  -->
+            <h2 class="titre">NOS SERVICES</h2>
+            <div class="pointTrait">
+                <div class="bleu"><i class="fas fa-circle"></i></div>
+                <div class="trait">
+                    <hr />
+                </div>
+            </div>
+            <p>Avec une grande expérience de la communication sur le web et une connaissance des facteurs déterminants de la réussite sur internet, nous vous proposons un accompagnement global pour vos projets de communication digitale .</p>
+        </article>
+        <!--la partie descriptif liste les compétences principales de l'agence -->
+        <article id="descriptifService">
+            <aside>
+                <figure>
+                    <img id="ecran" src="images/main-feature.png" alt="ecran d'ordinateur" />
+                </figure>
+            </aside>
+            <aside>
+                <div id="descriptif">
+                    <div class="description">
+                        <h3>UX Design</h3>
+                        <div class="imageText">
+                            <div class="imagesServices">
+                                <i id="graph1" class="fas fa-chart-line fa-2x"></i>
+                                <i id="point1" class="fas fa-circle"></i>
+                            </div>
+                            <div class="text">
+                                <p>Vous voulez créer un produit que vos clients vont adorer utiliser ? Nos designers sont en mesure de vous concevoir un produit centré autour de l'utilisateur.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="description">
+                        <h3>UI design</h3>
+                        <div class="imageText">
+                            <div class="imagesServices">
+                                <i id="graph2" class="fas fa-cubes fa-2x"></i>
+                                <i id="point2" class="fas fa-circle"></i>
+                            </div>
+                            <div class="text">
+                                <p>Nos designers s’attachent également aux éléments perceptibles : éléments graphiques, boutons, navigation, typographie… </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="description">
+                        <h3>SEO</h3>
+                        <div class="imageText">
+                            <div class="imagesServices">
+                                <i id="graph3" class="fas fa-chart-pie fa-2x"></i>
+                                <i id="point3" class="fas fa-circle"></i>
+                            </div>
+                            <div class="text">
+                                <p>Optimisation pour les moteurs de recherche, et référencement naturel font partie de nos talent . Notre objectif est d'améliorer le positionnement de vos pages web </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </aside>
+        </article>
+    </section>
+    <!--la section portfolio du site liste les projet réalisé par l'agence sous forme d'image projet et contenant les liens vers les sites des clients -->
+    <section id="portefolio">
+        <article>
+            <!--nous retrouvons dans cette section une partie titre comme dans la section précédente -->
+            <h2 class="titre">NOS PROJETS</h2>
+            <div class="pointTrait">
+                <div class="bleu"><i class="fas fa-circle"></i></div>
+                <div class="trait">
+                    <hr />
+                </div>
+            </div>
+            <p>Ils nous ont fait confiance pour leurs projets web et nous les remercions.</p>
+            <div id="menuProjets">
+                <!--la partie section contient egalement un menu de navigation qui permettra a terme de trier le portfolio par catégorie -->
+                <div class="btn-group">
+                    <div class="arrowButton">
+                        <button id="premier" class="button">All works</button>
+                        <div class="arrow"><i class="fas fa-caret-down"></i></div>
+                    </div>
+                    <div class="arrowButton">
+                        <button class="button">Creative</button>
+                        <div class="arrow"><i class="fas fa-caret-down"></i></div>
+                    </div>
+                    <div class="arrowButton">
+                        <button class="button">Corporate</button>
+                        <div class="arrow"><i class="fas fa-caret-down"></i></div>
+                    </div>
+                    <div class="arrowButton">
+                        <button id="dernier" class="button">Portfolio</button>
+                        <div class="arrow"><i class="fas fa-caret-down"></i></div>
+                    </div>
+                </div>
+            </div>
+        </article>
+        <div id="projets">
+            <!-- chaque projet est composé d'une image et d'un overlay contenant les informartions et un lien vers le site client l'overlay reagis de manière différente selon le support -->
+            <figure class="images">
+                <img src="images/portfolio/01.jpg" alt="projet Pro Déguise" />
+                <figcaption class="infosProjets">
+                    <i id="oeil" class="fas fa-eye fa-lg"></i>
+                    <div class="infosProjetsText">
+                        <p>Pro Déguise <br/><a href="#">prodeguise.fr</a></p>
+                    </div>
+                </figcaption>
+            </figure>
+            <figure class="images">
+                <img src="images/portfolio/02.jpg" alt="projet Scultéo" />
+                <figcaption class="infosProjets"><i class="fas fa-eye fa-lg"></i>
+                    <div class="infosProjetsText">
+                        <p>Scultéo <br/><a href="#">sculteo.fr</a></p>
+                    </div>
+                </figcaption>
+            </figure>
+            <figure class="images">
+                <img src="images/portfolio/03.jpg" alt="projet Pompadour" />
+                <figcaption class="infosProjets"><i class="fas fa-eye fa-lg"></i>
+                    <div class="infosProjetsText">
+                        <p>Pompadour<br/><a href="#">pompadour.fr</a></p>
+                    </div>
+                </figcaption>
+            </figure>
+            <figure class="images">
+                <img src="images/portfolio/04.jpg" alt="projet Technidrawer" />
+                <figcaption class="infosProjets"><i class="fas fa-eye fa-lg"></i>
+                    <div class="infosProjetsText">
+                        <p>Technidrawer <br/><a href="#">technidrawer.fr</a></p>
+                    </div>
+                </figcaption>
+            </figure>
+            <figure class="images">
+                <img src="images/portfolio/05.jpg" alt="projet Zalando" />
+                <figcaption class="infosProjets"><i class="fas fa-eye fa-lg"></i>
+                    <div class="infosProjetsText">
+                        <p>Zalando <br/><a href="#">zalando.fr</a></p>
+                    </div>
+                </figcaption>
+            </figure>
+            <figure class="images">
+                <img src="images/portfolio/06.jpg" alt="projet Street Art Galery" />
+                <figcaption class="infosProjets"><i class="fas fa-eye fa-lg"></i>
+                    <div class="infosProjetsText">
+                        <p>Street Art Galery <br/><a href="#">streetartist.fr</a></p>
+                    </div>
+                </figcaption>
+            </figure>
+            <figure class="images">
+                <img src="images/portfolio/07.jpg" alt="projet Design Us" />
+                <figcaption class="infosProjets"><i class="fas fa-eye fa-lg"></i>
+                    <div class="infosProjetsText">
+                        <p>Design Us <br/><a href="#">designus.fr</a></p>
+                    </div>
+                </figcaption>
+            </figure>
+            <figure class="images">
+                <img src="images/portfolio/08.jpg" alt="projet Desk dealer" />
+                <figcaption class="infosProjets"><i class="fas fa-eye fa-lg"></i>
+                    <div class="infosProjetsText">
+                        <p>Desk dealer <br/><a href="#">deskdealer.fr</a></p>
+                    </div>
+                </figcaption>
+            </figure>
+        </div>
+    </section>
+    <!--la section map contient donc une map google map inserer grace a un iframe et un formulaire  -->
+    <section id="contacts">
+        <div id="map">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2624.359698959154!2d2.314565215929642!3d48.870419107813206!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47e66fce8ca6e347%3A0x2e38f4467a582f22!2sLe+Palais+de+L&#39;%C3%89lys%C3%A9e!5e0!3m2!1sfr!2sfr!4v1524590357184" style="border:0" allowfullscreen>
+                </iframe>
+            <!--le formulaire pourra etre optimiser grace a javascript ou php -->
+            <div id="formulaire">
+                <form method="post" action="traitement.php">
+                    <fieldset>
+                        <label>Contact Infos<br />
+                                   WebAgency SAS<br />
+                                   55 Rue du Faubourg Saint-Honoré,<br />
+                                   75008 Paris<br />
+                                   Tél: 01 02 03 04 05 
+                            </label>
+                        <br/>
+                        <input type="text" required name="nom" id="nom" placeholder="Nom :" size="31" maxlength="30" />
+                        <input type="text" required name="prenom" id="prenom" placeholder="Prénom :" size="31" maxlength="30" />
+                        <input type="email" required name="email" id="email" placeholder="E-mail:" size="31" maxlength="30" />
+                        <textarea name="message" required id="message" placeholder="Votre message ..." rows="10" cols="23"></textarea>
+                        <input type="submit" id="boutonEnvoi" value="Envoyer" />
+                    </fieldset>
+                </form>
+            </div>
+        </div>
+    </section>
+    <footer>
+        <nav>
+            <ul id="menuReseaux">
+                <li><a href="#"><i class="fab fa-twitter"></i></a></li>
+                <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
+                <li><a href="#"><i class="fab fa-instagram"></i></a></li>
+                <li><a href="#"><i class="far fa-envelope"></i></a></li>
+            </ul>
+        </nav>
+        <p class="copyright"><i class="far fa-copyright"> Copyright WebAgency 2018</i> Publié le 23 mai 2018</p>
+        <p class="contact">Contact information: <a href="mailto:someone@example.com">someone@example.com</a>.</p>
+
+    </footer>
+</body>
+
+</html>
